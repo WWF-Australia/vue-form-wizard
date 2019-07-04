@@ -270,6 +270,12 @@
           tab.checked = true
         })
       },
+      desActivateAll () {
+        this.maxStep = this.tabs.length - 1
+        this.tabs.forEach((tab) => {
+          tab.checked = false
+        })
+      },
       navigateToTab (index) {
         let validate = index > this.activeTabIndex
         if (index <= this.maxStep) {
