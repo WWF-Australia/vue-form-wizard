@@ -271,7 +271,7 @@
         })
       },
       desActivateAll () {
-        this.maxStep = this.tabs.length - 1
+        this.maxStep = -1
         this.tabs.forEach((tab) => {
           tab.checked = false
         })
